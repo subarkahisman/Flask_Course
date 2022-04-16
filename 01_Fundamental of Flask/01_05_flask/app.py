@@ -17,7 +17,7 @@ def index():
     model.setDate('16/04/2022')
     model.setContent(content)
     
-    # send nilai to view
+    # send value to view
     return render_template('article.html',
             title=model.getTitle(),
             date=model.getDate(),
