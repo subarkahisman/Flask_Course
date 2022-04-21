@@ -1,4 +1,13 @@
 <html>
-<head>
-	<title>Demo Model 3</title>
-	
+	<head>
+		<title>Demo Model 4</title>
+	</html>
+	<body>
+		<h2>Demo Model 4</h2>
+		
+		<form action="http://localhost:5000/login" method="post">
+			{{ model.labels.get('username') }} <br />
+			<input type="text" name="username" /><br />
+			{{ model.labels.get('password') }} <br />
+			
+		</form>
