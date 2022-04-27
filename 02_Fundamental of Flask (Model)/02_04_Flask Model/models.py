@@ -1,17 +1,24 @@
-class Hello(object):
-    def __init__(self):
-        self.data = 0
-        self.value = 0
+class User(object):
+
+    def __init__(self, username='', password=''):
+        self.username = username
+        self.password = password
+        self.labels = {
+            'username': 'Username',
+            'password': 'Password'
+            }
+            
+    def setUsername(self, username):
+        self.username = username
         
-    def getData(self):
-        return self.data
+    def setPassword(self, password):
+        self.password = password
         
-    def setData(self, d):
-        self.data = d
-        
-    def getValue(self):
-        return self.value
-        
-    def setValue(self, v):
-        self.value = v
+    def authenticate(self):
+        if self.username == 'demo' and self.password = 'flask':
+            return True
+        else:
+            return False
+            
+            
         
